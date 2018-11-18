@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'TSTFKit_Swift' do
+
+pod 'TSToolKit_Swift',:git=>'https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git'
+
+end
+
+

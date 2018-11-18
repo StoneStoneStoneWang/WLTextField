@@ -1,0 +1,21 @@
+PODS:
+  - TSToolKit_Swift (1.0.5)
+
+DEPENDENCIES:
+  - TSToolKit_Swift (from `https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git`)
+
+EXTERNAL SOURCES:
+  TSToolKit_Swift:
+    :git: https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git
+
+CHECKOUT OPTIONS:
+  TSToolKit_Swift:
+    :commit: 85403393cca3b3b6a626c8cf347c8096037a5dbd
+    :git: https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git
+
+SPEC CHECKSUMS:
+  TSToolKit_Swift: 1b1823660454ab3508d43a177a817107976a9c65
+
+PODFILE CHECKSUM: 106bd8ca94cc4326e19fd63743c55a736fd2fc80
+
+COCOAPODS: 1.5.3
