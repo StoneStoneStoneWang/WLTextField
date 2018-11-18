@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSTFKit_Swift"
-s.version      = "1.0.5"
+s.version      = "1.0.0"
 s.summary      = "A Lib For TF."
 s.description  = <<-DESC
 TSTFKit_Swift 文本框的工具类 基于 MXThenAction
