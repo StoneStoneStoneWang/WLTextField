@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
     }
     
     fileprivate var tf = TSBaseTextField(frame: CGRect(x: 0, y: 100, width: 400, height: 44)).then {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         view.addSubview(tf)
         
-        tf.then { (make) in
+        _ = tf.then { (make) in
             
             make.set_maxLength(11)
             
@@ -39,21 +39,23 @@ class ViewController: UIViewController {
                 printLog(message: tf.text)
             })
             
-            make.set_textColor(.yellow)
+            make.set_textColor(TSHEXCOLOR(hexColor: "#555555"))
+            
+            make.set_backgroundColor(TSHEXCOLOR(hexColor: "#eeeeee"))
         }
         
-        tf.makeAttribute { (make) in
-            
-            make.set_maxLength(11)
-            
-            make.set_editType(.phone)
-            
-            make.set_textChanged({ (tf) in
-                
-                printLog(message: tf.text)
-            })
-            
-            make.set_textColor(.yellow)
-        }
+        //        tf.makeAttribute { (make) in
+        //
+        //            make.set_maxLength(11)
+        //
+        //            make.set_editType(.phone)
+        //
+        //            make.set_textChanged({ (tf) in
+        //
+        //                printLog(message: tf.text)
+        //            })
+        //
+        //            make.set_textColor(.yellow)
+        //        }
     }
 }

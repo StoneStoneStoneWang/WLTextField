@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C410CCC21A588C9008FBA44 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410CCB21A588C9008FBA44 /* File.swift */; };
 		6C7EBD19219C2BE700B093BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD18219C2BE700B093BA /* AppDelegate.swift */; };
 		6C7EBD1B219C2BE700B093BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD1A219C2BE700B093BA /* ViewController.swift */; };
 		6C7EBD1E219C2BE700B093BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EBD1C219C2BE700B093BA /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C410CCB21A588C9008FBA44 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		6C7EBD15219C2BE700B093BA /* TSTFKit_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTFKit_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7EBD18219C2BE700B093BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7EBD1A219C2BE700B093BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				6C7EBD46219C2C4D00B093BA /* Code */,
 				6C7EBD18219C2BE700B093BA /* AppDelegate.swift */,
+				6C410CCB21A588C9008FBA44 /* File.swift */,
 				6C7EBD1A219C2BE700B093BA /* ViewController.swift */,
 				6C7EBD1C219C2BE700B093BA /* Main.storyboard */,
 				6C7EBD1F219C2BE800B093BA /* Assets.xcassets */,
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C410CCC21A588C9008FBA44 /* File.swift in Sources */,
 				6C8BCD6F21A06B34006BBFE2 /* UITextField+TS.swift in Sources */,
 				6C7EBD1B219C2BE700B093BA /* ViewController.swift in Sources */,
 				6C7EBD48219C2E4400B093BA /* TSBaseTextField.swift in Sources */,

@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A37785E9E3789583BFD8CF109089BDB /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5416244BEDED643E2BD7A3E2AA7934 /* String+Util.swift */; };
-		21FE567A6413A506CA7EF4884FE153F2 /* TSToolKit_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA824F648FF07F4AFEB849AE0FD39D /* TSToolKit_Swift-dummy.m */; };
-		36653E2E971A99EF939BA46843CE4C28 /* TSToolKit_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD1234CCAB76A48095D14635E921149 /* TSToolKit_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42A00CB7691647E6B85054BC4D705074 /* MXThenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E5C9EFE22C2A6AD7F409F47036468 /* MXThenAction.swift */; };
-		506B7BE38FE49C69862C6BA809668B98 /* UIImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A306C775CEF77A56BD047E8D6EA0873 /* UIImage+Util.swift */; };
-		5071758F70AE9AC2E17B037AF1E4C478 /* TSOpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94F1DD763A968E2308D92F88E8CC0 /* TSOpenUrl.swift */; };
-		6A002CB712BEAD9E27B810D8B5439DF2 /* Load+ Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA0949D5957EDD94BEBB0480D7B845 /* Load+ Swizzling.swift */; };
+		21E58D6DE1CDE6761967884C13415EE5 /* TSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3593CB284A2106A1F2116C7C772A08 /* TSCommon.swift */; };
+		2E8990032FB2B5C217AC30A43FDEC26A /* TSOpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3149649C3313FB73672574FD63E11 /* TSOpenUrl.swift */; };
+		36653E2E971A99EF939BA46843CE4C28 /* TSToolKit_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BEA2EDC120758022522314442D330C /* TSToolKit_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5E4CDADDE9575E6B0C2106F68C0BE6 /* UIImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AF1A135047DF403ABB12C7AE8697C /* UIImage+Util.swift */; };
+		6600C417C0523B5CB8A91734EE67E32C /* Load+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44210B2E546BC54D69FB51A61119FD /* Load+Swizzling.swift */; };
 		705A56F7F52575FB1908621787E2F0F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		730CA6B12E9EF80EAF4EBBE34566A887 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064078D87AD77706FE6BA31D272E506B /* UIColor+Util.swift */; };
 		73EE347F15B2A350CAB0569CCDEDC8CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
 		781627AC9EA9A2D7899E7CEE4EC63E70 /* Pods-TSTFKit_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0538BF068DB505DAB82722ACED8DADAE /* Pods-TSTFKit_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4DE9110CAE28C3F7CCAD6E75496B793 /* TSCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C3A66F080285313FAF50EB121929F /* TSCommon.swift */; };
-		D4276C4852C55B193E7710956C9900CC /* TSAppStoreUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2459216EAA024A446BAA37EA6139878D /* TSAppStoreUtil.swift */; };
+		937A435BB9C2DF426AA2CEBD45C05ED4 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0A8645B6D92F1C8BF5F3D174E3F8FB /* UIColor+Util.swift */; };
+		C4C90602487CBCDF5196863726B71C36 /* TSAppStoreUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8219316C510A71DF13E84C717E742C7 /* TSAppStoreUtil.swift */; };
+		D8E27461D60C3458FD38F0CE56B9DFEF /* TSToolKit_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6105B05A2DF21B97A69545B87B02329A /* TSToolKit_Swift-dummy.m */; };
+		E16916F8197316CE4C83B0F7407269AA /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81068CF33D2B5269A3CE7DBF08AF64 /* DateUtil.swift */; };
+		E9C011751168A96E90885035CC0817FD /* MXThenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9A91D5566F2DB6115CA9E1F453F7F /* MXThenAction.swift */; };
 		EDA1B079BFC95C87B7CE8B0170E8235E /* Pods-TSTFKit_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BD0C99DD406028C0A554062322E3B /* Pods-TSTFKit_Swift-dummy.m */; };
 		F3A9E6867866D4B82E71F69DA503C541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
-		F83B0933C88E10CD2FB848AC7A27E71F /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6B14461F2A1D9F1F35021AE3C4AEF4 /* DateUtil.swift */; };
+		FA0E0E67B08FA4D5E48DBE6DD9CBC712 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED0D6B606E75E7437DEF01F1E54EA7 /* String+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,34 +37,34 @@
 
 /* Begin PBXFileReference section */
 		0538BF068DB505DAB82722ACED8DADAE /* Pods-TSTFKit_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSTFKit_Swift-umbrella.h"; sourceTree = "<group>"; };
-		064078D87AD77706FE6BA31D272E506B /* UIColor+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Util.swift"; path = "Code/UIColor+Util.swift"; sourceTree = "<group>"; };
+		0B0A8645B6D92F1C8BF5F3D174E3F8FB /* UIColor+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Util.swift"; path = "Code/UIColor+Util.swift"; sourceTree = "<group>"; };
+		20BEA2EDC120758022522314442D330C /* TSToolKit_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSToolKit_Swift-umbrella.h"; sourceTree = "<group>"; };
 		20D9C90EDA16EE652951DC76CF47B47A /* Pods-TSTFKit_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTFKit_Swift.release.xcconfig"; sourceTree = "<group>"; };
-		2459216EAA024A446BAA37EA6139878D /* TSAppStoreUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSAppStoreUtil.swift; path = Code/TSAppStoreUtil.swift; sourceTree = "<group>"; };
 		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33CA0949D5957EDD94BEBB0480D7B845 /* Load+ Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Load+ Swizzling.swift"; path = "Code/Load+ Swizzling.swift"; sourceTree = "<group>"; };
-		3C5416244BEDED643E2BD7A3E2AA7934 /* String+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Util.swift"; path = "Code/String+Util.swift"; sourceTree = "<group>"; };
+		3DC9A91D5566F2DB6115CA9E1F453F7F /* MXThenAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXThenAction.swift; path = Code/MXThenAction.swift; sourceTree = "<group>"; };
 		4546316A621407C511766A2EEBA5D756 /* TSToolKit_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TSToolKit_Swift.framework; path = TSToolKit_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A306C775CEF77A56BD047E8D6EA0873 /* UIImage+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Util.swift"; path = "Code/UIImage+Util.swift"; sourceTree = "<group>"; };
-		4BD1234CCAB76A48095D14635E921149 /* TSToolKit_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSToolKit_Swift-umbrella.h"; sourceTree = "<group>"; };
-		5950D3353AFB304076884C14772EA4D3 /* TSToolKit_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSToolKit_Swift.modulemap; sourceTree = "<group>"; };
-		682E5C9EFE22C2A6AD7F409F47036468 /* MXThenAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXThenAction.swift; path = Code/MXThenAction.swift; sourceTree = "<group>"; };
+		4CE2B6A33F260E62DD2A73A22DDA2D04 /* TSToolKit_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSToolKit_Swift-prefix.pch"; sourceTree = "<group>"; };
+		55A7384F2B40F3B5CDC7DD5E6B2C65A3 /* TSToolKit_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSToolKit_Swift.modulemap; sourceTree = "<group>"; };
+		5C4AF1A135047DF403ABB12C7AE8697C /* UIImage+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Util.swift"; path = "Code/UIImage+Util.swift"; sourceTree = "<group>"; };
+		6105B05A2DF21B97A69545B87B02329A /* TSToolKit_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSToolKit_Swift-dummy.m"; sourceTree = "<group>"; };
+		6D3593CB284A2106A1F2116C7C772A08 /* TSCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSCommon.swift; path = Code/TSCommon.swift; sourceTree = "<group>"; };
 		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		75EED3DD739708ACA025F23E1F813508 /* Pods_TSTFKit_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSTFKit_Swift.framework; path = "Pods-TSTFKit_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BD0C99DD406028C0A554062322E3B /* Pods-TSTFKit_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSTFKit_Swift-dummy.m"; sourceTree = "<group>"; };
 		8B6B3F9FF2A8DDBF18257B068A38C0AE /* Pods-TSTFKit_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSTFKit_Swift.modulemap"; sourceTree = "<group>"; };
-		8BA94F1DD763A968E2308D92F88E8CC0 /* TSOpenUrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSOpenUrl.swift; path = Code/TSOpenUrl.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D87609DF9430E458BCFA9F85D81BD1 /* TSToolKit_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSToolKit_Swift-prefix.pch"; sourceTree = "<group>"; };
-		9630176626258D42A5B659A9597481D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B2B81D303219E565EBEC8C4622AA152 /* Pods-TSTFKit_Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSTFKit_Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9CE5652C7DF5B5554B7B9A33DDC8FEF5 /* TSToolKit_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSToolKit_Swift.xcconfig; sourceTree = "<group>"; };
 		9E1B0F709BE1807415B5EF3B14F7ED32 /* Pods-TSTFKit_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTFKit_Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		AA6B14461F2A1D9F1F35021AE3C4AEF4 /* DateUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtil.swift; path = Code/DateUtil.swift; sourceTree = "<group>"; };
+		A2E144B480E6DD30374B836D11916B99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF44210B2E546BC54D69FB51A61119FD /* Load+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Load+Swizzling.swift"; path = "Code/Load+Swizzling.swift"; sourceTree = "<group>"; };
 		C664D30C3AF167C0386F4391049E47C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8FA824F648FF07F4AFEB849AE0FD39D /* TSToolKit_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSToolKit_Swift-dummy.m"; sourceTree = "<group>"; };
+		CFED0D6B606E75E7437DEF01F1E54EA7 /* String+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Util.swift"; path = "Code/String+Util.swift"; sourceTree = "<group>"; };
+		DEF3149649C3313FB73672574FD63E11 /* TSOpenUrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSOpenUrl.swift; path = Code/TSOpenUrl.swift; sourceTree = "<group>"; };
+		EB29FBE7BE036641FD40C5B19D624DD2 /* TSToolKit_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSToolKit_Swift.xcconfig; sourceTree = "<group>"; };
 		EB5500AA52B16912804D11004A128209 /* Pods-TSTFKit_Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTFKit_Swift-frameworks.sh"; sourceTree = "<group>"; };
-		F32C3A66F080285313FAF50EB121929F /* TSCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSCommon.swift; path = Code/TSCommon.swift; sourceTree = "<group>"; };
 		F54877C708834F04CE806CBD00280C7D /* Pods-TSTFKit_Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSTFKit_Swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8219316C510A71DF13E84C717E742C7 /* TSAppStoreUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSAppStoreUtil.swift; path = Code/TSAppStoreUtil.swift; sourceTree = "<group>"; };
+		FB81068CF33D2B5269A3CE7DBF08AF64 /* DateUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtil.swift; path = Code/DateUtil.swift; sourceTree = "<group>"; };
 		FFC6E749B16CFA9353AF0C600D311F2E /* Pods-TSTFKit_Swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTFKit_Swift-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,19 +98,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		1FA9667D21BE9A394E9BB3F083DF6AC2 /* TSToolKit_Swift */ = {
+		39B6490DB5CF5D141B161208F5B813C9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA6B14461F2A1D9F1F35021AE3C4AEF4 /* DateUtil.swift */,
-				33CA0949D5957EDD94BEBB0480D7B845 /* Load+ Swizzling.swift */,
-				682E5C9EFE22C2A6AD7F409F47036468 /* MXThenAction.swift */,
-				3C5416244BEDED643E2BD7A3E2AA7934 /* String+Util.swift */,
-				2459216EAA024A446BAA37EA6139878D /* TSAppStoreUtil.swift */,
-				F32C3A66F080285313FAF50EB121929F /* TSCommon.swift */,
-				8BA94F1DD763A968E2308D92F88E8CC0 /* TSOpenUrl.swift */,
-				064078D87AD77706FE6BA31D272E506B /* UIColor+Util.swift */,
-				4A306C775CEF77A56BD047E8D6EA0873 /* UIImage+Util.swift */,
-				EDAFC58A17C5642E9A65AB2800DA823B /* Support Files */,
+				A2E144B480E6DD30374B836D11916B99 /* Info.plist */,
+				55A7384F2B40F3B5CDC7DD5E6B2C65A3 /* TSToolKit_Swift.modulemap */,
+				EB29FBE7BE036641FD40C5B19D624DD2 /* TSToolKit_Swift.xcconfig */,
+				6105B05A2DF21B97A69545B87B02329A /* TSToolKit_Swift-dummy.m */,
+				4CE2B6A33F260E62DD2A73A22DDA2D04 /* TSToolKit_Swift-prefix.pch */,
+				20BEA2EDC120758022522314442D330C /* TSToolKit_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TSToolKit_Swift";
+			sourceTree = "<group>";
+		};
+		3DD784FB43659EDCA0A5B4A789A915E6 /* TSToolKit_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				FB81068CF33D2B5269A3CE7DBF08AF64 /* DateUtil.swift */,
+				BF44210B2E546BC54D69FB51A61119FD /* Load+Swizzling.swift */,
+				3DC9A91D5566F2DB6115CA9E1F453F7F /* MXThenAction.swift */,
+				CFED0D6B606E75E7437DEF01F1E54EA7 /* String+Util.swift */,
+				F8219316C510A71DF13E84C717E742C7 /* TSAppStoreUtil.swift */,
+				6D3593CB284A2106A1F2116C7C772A08 /* TSCommon.swift */,
+				DEF3149649C3313FB73672574FD63E11 /* TSOpenUrl.swift */,
+				0B0A8645B6D92F1C8BF5F3D174E3F8FB /* UIColor+Util.swift */,
+				5C4AF1A135047DF403ABB12C7AE8697C /* UIImage+Util.swift */,
+				39B6490DB5CF5D141B161208F5B813C9 /* Support Files */,
 			);
 			name = TSToolKit_Swift;
 			path = TSToolKit_Swift;
@@ -127,7 +141,7 @@
 		4DA532F573AE64A72BA84CF25C416A19 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1FA9667D21BE9A394E9BB3F083DF6AC2 /* TSToolKit_Swift */,
+				3DD784FB43659EDCA0A5B4A789A915E6 /* TSToolKit_Swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -169,20 +183,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EDAFC58A17C5642E9A65AB2800DA823B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9630176626258D42A5B659A9597481D4 /* Info.plist */,
-				5950D3353AFB304076884C14772EA4D3 /* TSToolKit_Swift.modulemap */,
-				9CE5652C7DF5B5554B7B9A33DDC8FEF5 /* TSToolKit_Swift.xcconfig */,
-				E8FA824F648FF07F4AFEB849AE0FD39D /* TSToolKit_Swift-dummy.m */,
-				93D87609DF9430E458BCFA9F85D81BD1 /* TSToolKit_Swift-prefix.pch */,
-				4BD1234CCAB76A48095D14635E921149 /* TSToolKit_Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TSToolKit_Swift";
-			sourceTree = "<group>";
-		};
 		EE963C080B627BCDB55A16B3E996A8ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +219,7 @@
 			buildConfigurationList = 63AE98B916136195A1B20720A9A1ED1A /* Build configuration list for PBXNativeTarget "TSToolKit_Swift" */;
 			buildPhases = (
 				92662B7FF6DE7435AE48C5C7C0698FA5 /* Headers */,
-				99C8872A96BDEF84065AC9BB9B906CF0 /* Sources */,
+				A2A96BB8771D8C1EF6E92A548D6F6B62 /* Sources */,
 				A5AEDF698C36904E3B282CA622C1ED2C /* Frameworks */,
 				D8949F2B24F5EB3DAC32EB6529164F10 /* Resources */,
 			);
@@ -296,20 +296,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		99C8872A96BDEF84065AC9BB9B906CF0 /* Sources */ = {
+		A2A96BB8771D8C1EF6E92A548D6F6B62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F83B0933C88E10CD2FB848AC7A27E71F /* DateUtil.swift in Sources */,
-				6A002CB712BEAD9E27B810D8B5439DF2 /* Load+ Swizzling.swift in Sources */,
-				42A00CB7691647E6B85054BC4D705074 /* MXThenAction.swift in Sources */,
-				1A37785E9E3789583BFD8CF109089BDB /* String+Util.swift in Sources */,
-				D4276C4852C55B193E7710956C9900CC /* TSAppStoreUtil.swift in Sources */,
-				A4DE9110CAE28C3F7CCAD6E75496B793 /* TSCommon.swift in Sources */,
-				5071758F70AE9AC2E17B037AF1E4C478 /* TSOpenUrl.swift in Sources */,
-				21FE567A6413A506CA7EF4884FE153F2 /* TSToolKit_Swift-dummy.m in Sources */,
-				730CA6B12E9EF80EAF4EBBE34566A887 /* UIColor+Util.swift in Sources */,
-				506B7BE38FE49C69862C6BA809668B98 /* UIImage+Util.swift in Sources */,
+				E16916F8197316CE4C83B0F7407269AA /* DateUtil.swift in Sources */,
+				6600C417C0523B5CB8A91734EE67E32C /* Load+Swizzling.swift in Sources */,
+				E9C011751168A96E90885035CC0817FD /* MXThenAction.swift in Sources */,
+				FA0E0E67B08FA4D5E48DBE6DD9CBC712 /* String+Util.swift in Sources */,
+				C4C90602487CBCDF5196863726B71C36 /* TSAppStoreUtil.swift in Sources */,
+				21E58D6DE1CDE6761967884C13415EE5 /* TSCommon.swift in Sources */,
+				2E8990032FB2B5C217AC30A43FDEC26A /* TSOpenUrl.swift in Sources */,
+				D8E27461D60C3458FD38F0CE56B9DFEF /* TSToolKit_Swift-dummy.m in Sources */,
+				937A435BB9C2DF426AA2CEBD45C05ED4 /* UIColor+Util.swift in Sources */,
+				5E5E4CDADDE9575E6B0C2106F68C0BE6 /* UIImage+Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +434,7 @@
 		};
 		7F112DEB19608BA8453CF4235751DD21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CE5652C7DF5B5554B7B9A33DDC8FEF5 /* TSToolKit_Swift.xcconfig */;
+			baseConfigurationReference = EB29FBE7BE036641FD40C5B19D624DD2 /* TSToolKit_Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -573,7 +573,7 @@
 		};
 		AD576B9C45C6EF28EA62483EFB71F3D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CE5652C7DF5B5554B7B9A33DDC8FEF5 /* TSToolKit_Swift.xcconfig */;
+			baseConfigurationReference = EB29FBE7BE036641FD40C5B19D624DD2 /* TSToolKit_Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

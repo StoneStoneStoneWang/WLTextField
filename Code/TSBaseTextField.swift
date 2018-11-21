@@ -10,6 +10,7 @@
 import UIKit
 import TSToolKit_Swift
 
+// 参考文献 https://blog.csdn.net/Mazy_ma/article/details/70135990
 fileprivate let TSTOPLINE_TAG: Int = 1001
 
 fileprivate let TSBOTTOMLINE_TAG: Int = 1002
@@ -18,15 +19,15 @@ fileprivate let TSDOTAFTERCOUNT: Int = 2
 
 fileprivate typealias TSTextChanged = (TSBaseTextField) -> ()
 
-public class TSBaseTextField: UITextField {
+open class TSBaseTextField: UITextField {
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         commitInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -89,7 +90,7 @@ public class TSBaseTextField: UITextField {
 
 extension TSBaseTextField {
     
-    public func commitInit() {
+    open func commitInit() {
         
         backgroundColor = .clear
         
@@ -182,7 +183,7 @@ extension TSBaseTextField {
 
 extension TSBaseTextField {
     
-    public override func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    open override func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         return __shouldChangeCharacters(target: textField as! TSBaseTextField,range: range,string: string)
     }
@@ -250,7 +251,7 @@ extension TSBaseTextField {
 // MARK: textFieldDidChange
 extension TSBaseTextField {
     
-    @objc public func textFieldDidChange(_ textField: TSBaseTextField) {
+    @objc open func textFieldDidChange(_ textField: TSBaseTextField) {
         
         __textDidChange(target: textField)
     }
@@ -294,19 +295,19 @@ extension TSBaseTextField {
 // MARK: editingRect and textRect rightViewRect leftViewRect
 extension TSBaseTextField {
     
-    public override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    open override func editingRect(forBounds bounds: CGRect) -> CGRect {
         
         return super.editingRect(forBounds: bounds)
     }
-    public override func textRect(forBounds bounds: CGRect) -> CGRect {
+    open override func textRect(forBounds bounds: CGRect) -> CGRect {
         
         return super.textRect(forBounds: bounds)
     }
-    public override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+    open override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         
         return super.rightViewRect(forBounds: bounds)
     }
-    public override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+    open override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         
         return super.leftViewRect(forBounds: bounds)
     }
