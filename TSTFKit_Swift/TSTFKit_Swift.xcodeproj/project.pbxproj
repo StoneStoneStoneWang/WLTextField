@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C410CCC21A588C9008FBA44 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410CCB21A588C9008FBA44 /* File.swift */; };
+		6C410D5021A6F663008FBA44 /* WLLeftImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410D4F21A6F663008FBA44 /* WLLeftImageTextField.swift */; };
+		6C410D5221A6F7C2008FBA44 /* WLLeftTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410D5121A6F7C2008FBA44 /* WLLeftTitleTextField.swift */; };
 		6C7EBD19219C2BE700B093BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD18219C2BE700B093BA /* AppDelegate.swift */; };
 		6C7EBD1B219C2BE700B093BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD1A219C2BE700B093BA /* ViewController.swift */; };
 		6C7EBD1E219C2BE700B093BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EBD1C219C2BE700B093BA /* Main.storyboard */; };
@@ -15,7 +17,7 @@
 		6C7EBD23219C2BE800B093BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EBD21219C2BE800B093BA /* LaunchScreen.storyboard */; };
 		6C7EBD2E219C2BE800B093BA /* TSTFKit_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD2D219C2BE800B093BA /* TSTFKit_SwiftTests.swift */; };
 		6C7EBD39219C2BE800B093BA /* TSTFKit_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD38219C2BE800B093BA /* TSTFKit_SwiftUITests.swift */; };
-		6C7EBD48219C2E4400B093BA /* TSBaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD47219C2E4400B093BA /* TSBaseTextField.swift */; };
+		6C7EBD48219C2E4400B093BA /* WLBaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD47219C2E4400B093BA /* WLBaseTextField.swift */; };
 		6C7EBD4C219C3ECC00B093BA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EBD4B219C3ECC00B093BA /* Podfile */; };
 		6C8BCD6F21A06B34006BBFE2 /* UITextField+TS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8BCD6E21A06B34006BBFE2 /* UITextField+TS.swift */; };
 		A515ABF2BB6FD09B2705E243 /* Pods_TSTFKit_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7A2D6075A2520FAA982E83 /* Pods_TSTFKit_Swift.framework */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		6C410CCB21A588C9008FBA44 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6C410D4F21A6F663008FBA44 /* WLLeftImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLeftImageTextField.swift; sourceTree = "<group>"; };
+		6C410D5121A6F7C2008FBA44 /* WLLeftTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLeftTitleTextField.swift; sourceTree = "<group>"; };
 		6C7EBD15219C2BE700B093BA /* TSTFKit_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTFKit_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7EBD18219C2BE700B093BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7EBD1A219C2BE700B093BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +57,7 @@
 		6C7EBD34219C2BE800B093BA /* TSTFKit_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSTFKit_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7EBD38219C2BE800B093BA /* TSTFKit_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSTFKit_SwiftUITests.swift; sourceTree = "<group>"; };
 		6C7EBD3A219C2BE800B093BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C7EBD47219C2E4400B093BA /* TSBaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSBaseTextField.swift; sourceTree = "<group>"; };
+		6C7EBD47219C2E4400B093BA /* WLBaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTextField.swift; sourceTree = "<group>"; };
 		6C7EBD4B219C3ECC00B093BA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6C8BCD6E21A06B34006BBFE2 /* UITextField+TS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+TS.swift"; sourceTree = "<group>"; };
 		83DADF31D5F0FF63CDD26944 /* Pods-TSTFKit_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSTFKit_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSTFKit_Swift/Pods-TSTFKit_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 		6C7EBD46219C2C4D00B093BA /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				6C7EBD47219C2E4400B093BA /* TSBaseTextField.swift */,
+				6C7EBD47219C2E4400B093BA /* WLBaseTextField.swift */,
+				6C410D4F21A6F663008FBA44 /* WLLeftImageTextField.swift */,
+				6C410D5121A6F7C2008FBA44 /* WLLeftTitleTextField.swift */,
 				6C8BCD6E21A06B34006BBFE2 /* UITextField+TS.swift */,
 			);
 			name = Code;
@@ -352,10 +358,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C410CCC21A588C9008FBA44 /* File.swift in Sources */,
+				6C410D5021A6F663008FBA44 /* WLLeftImageTextField.swift in Sources */,
 				6C8BCD6F21A06B34006BBFE2 /* UITextField+TS.swift in Sources */,
 				6C7EBD1B219C2BE700B093BA /* ViewController.swift in Sources */,
-				6C7EBD48219C2E4400B093BA /* TSBaseTextField.swift in Sources */,
+				6C7EBD48219C2E4400B093BA /* WLBaseTextField.swift in Sources */,
 				6C7EBD19219C2BE700B093BA /* AppDelegate.swift in Sources */,
+				6C410D5221A6F7C2008FBA44 /* WLLeftTitleTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

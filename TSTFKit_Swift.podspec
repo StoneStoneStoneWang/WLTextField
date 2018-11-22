@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
 s.name         = "TSTFKit_Swift"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "A Lib For TF."
 s.description  = <<-DESC
-TSTFKit_Swift 文本框的工具类 基于 MXThenAction UIColor 
+TSTFKit_Swift 文本框的工具类 基于 MXThenAction UIColor
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/TSTFKit_Swift"

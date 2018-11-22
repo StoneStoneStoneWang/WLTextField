@@ -1,5 +1,5 @@
 PODS:
-  - TSToolKit_Swift (1.0.9)
+  - TSToolKit_Swift (1.1.0)
 
 DEPENDENCIES:
   - TSToolKit_Swift (from `https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   TSToolKit_Swift:
-    :commit: e09e9bf6c874b3e5fa35cf27f604da58adb08892
+    :commit: 2b770fce37509f1f15d901c43370c76de2b23ab3
     :git: https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git
 
 SPEC CHECKSUMS:
-  TSToolKit_Swift: 92157bb826df66b9461eebe8ac380254ccfc13c7
+  TSToolKit_Swift: 03f44bc0f664f3e95afc1488027c29e7f19e8fe5
 
 PODFILE CHECKSUM: 106bd8ca94cc4326e19fd63743c55a736fd2fc80
 

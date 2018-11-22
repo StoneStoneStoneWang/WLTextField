@@ -1,5 +1,5 @@
 //
-//  TSBaseTextField.swift
+//  WLBaseTextField.swift
 //  TSTFKit_Swift
 //
 //  Created by three stone 王 on 2018/11/14.
@@ -17,9 +17,9 @@ fileprivate let TSBOTTOMLINE_TAG: Int = 1002
 
 fileprivate let TSDOTAFTERCOUNT: Int = 2
 
-fileprivate typealias TSTextChanged = (TSBaseTextField) -> ()
+fileprivate typealias TSTextChanged = (WLBaseTextField) -> ()
 
-open class TSBaseTextField: UITextField {
+open class WLBaseTextField: UITextField {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -88,9 +88,9 @@ open class TSBaseTextField: UITextField {
     fileprivate var textChanged: TSTextChanged!
 }
 
-extension TSBaseTextField {
+extension WLBaseTextField {
     
-    open func commitInit() {
+    @objc open func commitInit() {
         
         backgroundColor = .clear
         
@@ -113,7 +113,7 @@ extension TSBaseTextField {
 }
 
 /** 文本框内容 样式 */
-extension TSBaseTextField {
+extension WLBaseTextField {
     
     public enum TSTextFiledEditType: Int {
         
@@ -131,16 +131,16 @@ extension TSBaseTextField {
         //        case `default` // 默认 这个在swift中弃用
     }
 }
-extension TSBaseTextField {
+extension WLBaseTextField {
     
-    public func makeAttribute(_ closure: @escaping (TSBaseTextField) -> ()) {
+    public func makeAttribute(_ closure: @escaping (WLBaseTextField) -> ()) {
         
         closure(self)
     }
 }
 
 // 新增属性的处理
-extension TSBaseTextField {
+extension WLBaseTextField {
     
     public func set_maxLength(_ maxLength: Int) {
         
@@ -157,7 +157,7 @@ extension TSBaseTextField {
         self.pattern = pattern
     }
     
-    public func set_textChanged(_ textChanged: @escaping (TSBaseTextField) -> ()) {
+    public func set_textChanged(_ textChanged: @escaping (WLBaseTextField) -> ()) {
         
         self.textChanged = textChanged
     }
@@ -181,14 +181,14 @@ extension TSBaseTextField {
     }
 }
 
-extension TSBaseTextField {
+extension WLBaseTextField {
     
     open override func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        return __shouldChangeCharacters(target: textField as! TSBaseTextField,range: range,string: string)
+        return __shouldChangeCharacters(target: textField as! WLBaseTextField,range: range,string: string)
     }
     
-    private func __shouldChangeCharacters(target: TSBaseTextField , range: NSRange, string: String) -> Bool {
+    private func __shouldChangeCharacters(target: WLBaseTextField , range: NSRange, string: String) -> Bool {
         
         let nowStr = target.text ?? ""
         
@@ -249,15 +249,15 @@ extension TSBaseTextField {
 
 
 // MARK: textFieldDidChange
-extension TSBaseTextField {
+extension WLBaseTextField {
     
-    @objc open func textFieldDidChange(_ textField: TSBaseTextField) {
+    @objc open func textFieldDidChange(_ textField: WLBaseTextField) {
         
         __textDidChange(target: textField)
     }
     
     // MARK: editChanged
-    private func __textDidChange(target: TSBaseTextField) {
+    private func __textDidChange(target: WLBaseTextField) {
         
         var resultText: String = target.text ?? ""
         
@@ -293,7 +293,7 @@ extension TSBaseTextField {
 }
 
 // MARK: editingRect and textRect rightViewRect leftViewRect
-extension TSBaseTextField {
+extension WLBaseTextField {
     
     open override func editingRect(forBounds bounds: CGRect) -> CGRect {
         
