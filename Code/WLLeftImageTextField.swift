@@ -47,4 +47,9 @@ extension WLLeftImageTextField {
         
         leftImageFrame = CGRect(x: 0, y: 0, width: 80, height: 44)
     }
+    
+    @objc open override func makeAttribute(_ closure: @escaping (WLLeftImageTextField) -> ()) {
+        
+        closure(self)
+    }
 }

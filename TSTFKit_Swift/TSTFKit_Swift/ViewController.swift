@@ -36,11 +36,9 @@ class ViewController: UIViewController {
                 printLog(message: tf.text)
             })
             
-            printLog(message: TSHEXCOLOR(hexColor: "#eeeeee"))
+            make.set_textColor(WLHEXCOLOR(hexColor: "#555555"))
             
-            make.set_textColor(TSHEXCOLOR(hexColor: "#555555"))
-            
-            make.set_backgroundColor(TSHEXCOLOR(hexColor: "#eeeeee"))
+            make.set_backgroundColor(WLHEXCOLOR(hexColor: "#eeeeee"))
         }
     }
 }

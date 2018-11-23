@@ -24,7 +24,7 @@ class WLLeftTitleTextField: WLBaseTextField {
             
             leftTitleLabel.textAlignment = .center
             
-            leftTitleLabel.textColor = TSHEXCOLOR(hexColor: "#666666")
+            leftTitleLabel.textColor = WLHEXCOLOR(hexColor: "#666666")
             
             leftTitleLabel.font = UIFont.systemFont(ofSize: 15)
             
@@ -39,7 +39,6 @@ class WLLeftTitleTextField: WLBaseTextField {
             leftTitleLabel.frame = newValue
         }
     }
-    
 }
 extension WLLeftTitleTextField {
     
@@ -47,5 +46,9 @@ extension WLLeftTitleTextField {
         super.commitInit()
         
         leftTitleFrame = CGRect(x: 0, y: 0, width: 80, height: 44)
+    }
+    @objc open override func makeAttribute(_ closure: @escaping (WLLeftTitleTextField) -> ()) {
+        
+        closure(self)
     }
 }

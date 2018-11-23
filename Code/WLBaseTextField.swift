@@ -133,7 +133,7 @@ extension WLBaseTextField {
 }
 extension WLBaseTextField {
     
-    public func makeAttribute(_ closure: @escaping (WLBaseTextField) -> ()) {
+    @objc open func makeAttribute(_ closure: @escaping (WLBaseTextField) -> ()) {
         
         closure(self)
     }
