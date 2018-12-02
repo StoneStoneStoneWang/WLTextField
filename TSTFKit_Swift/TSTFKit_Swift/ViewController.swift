@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TSToolKit_Swift
+import WLToolsKit
 
 class ViewController: UIViewController {
     
@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
     }
     
-    fileprivate var tf = WLBaseTextField(frame: CGRect(x: 0, y: 100, width: 400, height: 44))
+    fileprivate final let tf = WLBaseTextField(frame: CGRect(x: 0, y: 100, width: 400, height: 44))
     
     override func viewDidLoad() {
         super.viewDidLoad()

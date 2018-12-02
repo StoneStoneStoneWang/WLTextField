@@ -8,7 +8,7 @@
 // 针对于edittype 为 define length的解决方案
 // 以九宫格为例 用户点击 如果是九宫格
 import UIKit
-import TSToolKit_Swift
+import WLToolsKit
 
 // 参考文献 https://blog.csdn.net/Mazy_ma/article/details/70135990
 fileprivate let TSTOPLINE_TAG: Int = 1001
