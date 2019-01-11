@@ -62,8 +62,6 @@ extension UITextField {
         
         self.rightView = rightView
     }
-    
-    
 }
 
 public typealias TSShouldReturn = () -> Bool
@@ -130,3 +128,4 @@ extension UITextField: UITextFieldDelegate {
         return shouldClear!()
     }
 }
+

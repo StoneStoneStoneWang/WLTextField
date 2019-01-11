@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C410CCC21A588C9008FBA44 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410CCB21A588C9008FBA44 /* File.swift */; };
 		6C410D5021A6F663008FBA44 /* WLLeftImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410D4F21A6F663008FBA44 /* WLLeftImageTextField.swift */; };
 		6C410D5221A6F7C2008FBA44 /* WLLeftTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C410D5121A6F7C2008FBA44 /* WLLeftTitleTextField.swift */; };
 		6C7EBD19219C2BE700B093BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBD18219C2BE700B093BA /* AppDelegate.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6C410CCB21A588C9008FBA44 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		6C410D4F21A6F663008FBA44 /* WLLeftImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLeftImageTextField.swift; sourceTree = "<group>"; };
 		6C410D5121A6F7C2008FBA44 /* WLLeftTitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLeftTitleTextField.swift; sourceTree = "<group>"; };
 		6C7EBD15219C2BE700B093BA /* TSTFKit_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTFKit_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +117,6 @@
 			children = (
 				6C7EBD46219C2C4D00B093BA /* Code */,
 				6C7EBD18219C2BE700B093BA /* AppDelegate.swift */,
-				6C410CCB21A588C9008FBA44 /* File.swift */,
 				6C7EBD1A219C2BE700B093BA /* ViewController.swift */,
 				6C7EBD1C219C2BE700B093BA /* Main.storyboard */,
 				6C7EBD1F219C2BE800B093BA /* Assets.xcassets */,
@@ -246,6 +243,7 @@
 				TargetAttributes = {
 					6C7EBD14219C2BE700B093BA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					6C7EBD28219C2BE800B093BA = {
 						CreatedOnToolsVersion = 10.1;
@@ -357,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C410CCC21A588C9008FBA44 /* File.swift in Sources */,
 				6C410D5021A6F663008FBA44 /* WLLeftImageTextField.swift in Sources */,
 				6C8BCD6F21A06B34006BBFE2 /* UITextField+WL.swift in Sources */,
 				6C7EBD1B219C2BE700B093BA /* ViewController.swift in Sources */,
@@ -539,6 +536,7 @@
 			baseConfigurationReference = A1264AFD813BC4119F2346A8 /* Pods-TSTFKit_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQ8T96P6H;
 				INFOPLIST_FILE = TSTFKit_Swift/Info.plist;
@@ -549,6 +547,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JiuTouZhu.TSTFKit-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,6 +559,7 @@
 			baseConfigurationReference = 83DADF31D5F0FF63CDD26944 /* Pods-TSTFKit_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QQ8T96P6H;
 				INFOPLIST_FILE = TSTFKit_Swift/Info.plist;
@@ -569,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JiuTouZhu.TSTFKit-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

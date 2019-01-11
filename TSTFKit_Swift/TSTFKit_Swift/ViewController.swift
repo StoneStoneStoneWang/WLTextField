@@ -28,9 +28,9 @@ class ViewController: UIViewController {
         
         tf.makeAttribute { (make) in
             
-            make.set_maxLength(11)
+            make.set_maxLength(12)
             
-            make.set_editType(.phone)
+            make.set_editType(.defineLength)
             
             make.set_textChanged({ (tf) in
                 
@@ -41,5 +41,9 @@ class ViewController: UIViewController {
             
             make.set_backgroundColor(WLHEXCOLOR(hexColor: "#eeeeee"))
         }
+        
+        tf.backgroundColor = .red
+        
+    
     }
 }

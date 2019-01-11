@@ -1,9 +1,9 @@
 //
 //  WLBaseTextField.swift
-//  TSTFKit_Swift
+//  WLTFKit_Swift
 //
 //  Created by three stone 王 on 2018/11/14.
-//  Copyright © 2018年 three stone 王. All rights reserved.
+//  Copyright © 2018年 three stone 王. All righWL reserved.
 //
 // 针对于edittype 为 define length的解决方案
 // 以九宫格为例 用户点击 如果是九宫格
@@ -11,13 +11,27 @@ import UIKit
 import WLToolsKit
 
 // 参考文献 https://blog.csdn.net/Mazy_ma/article/details/70135990
-fileprivate let TSTOPLINE_TAG: Int = 1001
 
-fileprivate let TSBOTTOMLINE_TAG: Int = 1002
+//非中文：[^\\u4E00-\\u9FA5]
+//非英文：[^A-Za-z]
+//非数字：[^0-9]
+//非中文或英文：[^A-Za-z\\u4E00-\\u9FA5]
+//非英文或数字：[^A-Za-z0-9]
+//非因为或数字或下划线：[^A-Za-z0-9_]
 
-fileprivate let TSDOTAFTERCOUNT: Int = 2
+fileprivate let WLTOPLINE_TAG: Int = 1001
 
-fileprivate typealias TSTextChanged = (WLBaseTextField) -> ()
+fileprivate let WLBOTTOMLINE_TAG: Int = 1002
+
+fileprivate let WLDOTAFTERCOUNT: Int = 2
+
+fileprivate let WLNUMBER_PARTTERN: String = "^[0-9]*$"
+
+fileprivate let WLNUMBERANDCHAR_PARTTERN: String = "^[0-9a-zA-Z]*$"
+
+fileprivate let WL_ZH_CN: String = "[^\\u4E00-\\u9FA5]"
+
+fileprivate typealias WLTextChanged = (WLBaseTextField) -> ()
 
 open class WLBaseTextField: UITextField {
     
@@ -34,7 +48,7 @@ open class WLBaseTextField: UITextField {
     // MARK: topline
     fileprivate lazy var topLine: UIView = UIView().then {
         
-        $0.tag = TSTOPLINE_TAG
+        $0.tag = WLTOPLINE_TAG
     }
     
     public var topLineFrame: CGRect = .zero
@@ -44,7 +58,7 @@ open class WLBaseTextField: UITextField {
     // MARK: bottomLine
     fileprivate lazy var bottomLine: UIView = UIView().then {
         
-        $0.tag = TSBOTTOMLINE_TAG
+        $0.tag = WLBOTTOMLINE_TAG
     }
     
     fileprivate var bottomLineFrame: CGRect = .zero
@@ -54,7 +68,7 @@ open class WLBaseTextField: UITextField {
     // MARK: maxLength 默认Int.max
     fileprivate var maxLength: Int = Int.max
     // MARK: 编辑类型 详情参考 枚举
-    fileprivate var editType: TSTextFiledEditType = .phone {
+    fileprivate var editType: WLTextFiledEditType = .phone {
         
         willSet {
             switch newValue {
@@ -63,7 +77,7 @@ open class WLBaseTextField: UITextField {
             case .vcode_Length4:
                 fallthrough
             case .vcode_length6:
-                pattern = "^[0-9]*$"
+                pattern = WLNUMBER_PARTTERN
                 
                 keyboardType = .phonePad
             case .priceEdit:
@@ -74,18 +88,44 @@ open class WLBaseTextField: UITextField {
                 keyboardType = .decimalPad
             case .secret:
                 
-                pattern = "^[0-9a-zA-Z]*$"
+                pattern = WLNUMBERANDCHAR_PARTTERN
                 
                 keyboardType = .asciiCapable
+            case .defineLength:
+                //            case .only_zh_cn:
+                
+                NotificationCenter
+                    .default
+                    .addObserver(self, selector: #selector(greetingTextFieldChanged), name: NSNotification.Name(rawValue: "UITextFieldTextDidChangeNotification"), object: self)
+                
+                maxLength = 10
+                
+                keyboardType = .default
+            case .only_zh_cn:
+                
+                NotificationCenter
+                    .default
+                    .addObserver(self, selector: #selector(greetingTextFieldChanged), name: NSNotification.Name(rawValue: "UITextFieldTextDidChangeNotification"), object: self)
+                keyboardType = .default
+            case .default:
+                
+                keyboardType = .default
+                
+                maxLength = Int.max
             }
         }
+    }
+    
+    deinit {
+        
+        NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "UITextFieldTextDidChangeNotification"), object: self)
     }
     
     // MARK: 限制输入的正则表达式字符串
     //  参考文献 https://www.jianshu.com/p/ee27e37bd079
     fileprivate var pattern: String = ""
     // MARK: 文本变化回调（observer为UITextFiled）
-    fileprivate var textChanged: TSTextChanged!
+    fileprivate var textChanged: WLTextChanged!
 }
 
 extension WLBaseTextField {
@@ -115,7 +155,7 @@ extension WLBaseTextField {
 /** 文本框内容 样式 */
 extension WLBaseTextField {
     
-    public enum TSTextFiledEditType: Int {
+    public enum WLTextFiledEditType: Int {
         
         case priceEdit
         /** 手机号 默认判断是长度11位 首位为1的+86手机号 如果是复制过去的 加入了-处理机制 比如从通讯录复制*/
@@ -126,6 +166,12 @@ extension WLBaseTextField {
         case vcode_Length4
         /** 6位验证码 */
         case vcode_length6
+        
+        case only_zh_cn // 简体中文
+        
+        case defineLength
+        
+        case `default`
         //        /** 文本内容规定长度 比如只能输入2-10个字符 */
         //        case defineLength // 这个在swift中弃用
         //        case `default` // 默认 这个在swift中弃用
@@ -147,7 +193,7 @@ extension WLBaseTextField {
         self.maxLength = maxLength
     }
     
-    public func set_editType(_ editType: TSTextFiledEditType) {
+    public func set_editType(_ editType: WLTextFiledEditType) {
         
         self.editType = editType
     }
@@ -180,7 +226,7 @@ extension WLBaseTextField {
         topLine.backgroundColor = color
     }
 }
-
+// MARK: UITextFieldDelegate
 extension WLBaseTextField {
     
     open override func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -190,42 +236,47 @@ extension WLBaseTextField {
     
     private func __shouldChangeCharacters(target: WLBaseTextField , range: NSRange, string: String) -> Bool {
         
+        if editType == .defineLength || editType == .only_zh_cn || editType == .default {
+            
+            return true
+        }
+        
         let nowStr = target.text ?? ""
         
-        let resultStr = NSMutableString(string: nowStr)
+        let resulWLtr = NSMutableString(string: nowStr)
         
         if string.count == 0 {
             
-            resultStr.deleteCharacters(in: range)
+            resulWLtr.deleteCharacters(in: range)
         } else {
             
             if range.length == 0 {
                 
-                resultStr.insert(string, at: range.location)
+                resulWLtr.insert(string, at: range.location)
             } else {
                 
-                resultStr.replaceCharacters(in: range, with: string)
+                resulWLtr.replaceCharacters(in: range, with: string)
             }
         }
         
         // 长度判断
         if maxLength != Int.max {
             
-            if resultStr.length > maxLength {
+            if resulWLtr.length > maxLength {
                 
                 return false
             }
         }
         
         //正则表达式匹配
-        if resultStr.length > 0 {
+        if resulWLtr.length > 0 {
             
             if pattern.isEmpty {
                 
                 return true
             }
             
-            return __handlePattern(content: resultStr as String, pattern: pattern)
+            return __handlePattern(content: resulWLtr as String, pattern: pattern)
         }
         
         return true
@@ -251,6 +302,39 @@ extension WLBaseTextField {
 // MARK: textFieldDidChange
 extension WLBaseTextField {
     
+    @objc open func greetingTextFieldChanged(obj: Notification) {
+        
+        
+        
+        guard let _: UITextRange = markedTextRange else{
+            //当前光标的位置（后面会对其做修改）
+            let cursorPostion = offset(from: endOfDocument,
+                                       to: selectedTextRange!.end)
+            //判断非中文的正则表达式
+            let pattern = "[^\\u4E00-\\u9FA5]"
+            //替换后的字符串（过滤调非中文字符）
+            var str = text!.pregReplace(pattern: pattern, with: "")
+            
+            if editType == .defineLength {
+                
+                if str.count > maxLength {
+                    
+                    str = String(str.prefix(maxLength))
+                }
+            }
+            
+            text = str
+            
+            //让光标停留在正确位置
+            let targetPostion = position(from: endOfDocument,
+                                         offset: cursorPostion)!
+            selectedTextRange = textRange(from: targetPostion,
+                                          to: targetPostion)
+            
+            return
+        }
+    }
+    
     @objc open func textFieldDidChange(_ textField: WLBaseTextField) {
         
         __textDidChange(target: textField)
@@ -259,36 +343,40 @@ extension WLBaseTextField {
     // MARK: editChanged
     private func __textDidChange(target: WLBaseTextField) {
         
-        var resultText: String = target.text ?? ""
-        
-        // 内容适配
-        if maxLength != Int.max {
+        switch target.editType {
+        case .defineLength: break
             
-            //先内容过滤
-            if editType == .phone ||  editType == .vcode_Length4 ||  editType == .vcode_length6 {
-                
-                resultText = resultText.replacingOccurrences(of: " ", with: "")
-            }
-            //再判断长度
+        default:
             
-            if resultText.count > maxLength && target.value(forKey: "markedTextRange") == nil {
+            var resultText: String = target.text ?? ""
+            
+            // 内容适配
+            if maxLength != Int.max {
                 
-                while resultText.count > maxLength {
+                //先内容过滤
+                if editType == .phone ||  editType == .vcode_Length4 ||  editType == .vcode_length6 {
                     
-                    resultText = "\(resultText[..<resultText.index(before: resultText.endIndex)])"
+                    resultText = resultText.replacingOccurrences(of: " ", with: "")
                 }
+                //再判断长度
                 
-                target.setValue(resultText, forKey: "text")
-            } else {
-                
-                target.setValue(resultText, forKey: "text")
+                if resultText.count > maxLength && target.value(forKey: "markedTextRange") == nil {
+                    
+                    while resultText.count > maxLength {
+                        
+                        resultText = "\(resultText[..<resultText.index(before: resultText.endIndex)])"
+                    }
+                    
+                    target.setValue(resultText, forKey: "text")
+                } else {
+                    
+                    target.setValue(resultText, forKey: "text")
+                }
             }
         }
         
-        if let textChanged = textChanged {
-            
-            textChanged(target)
-        }
+        if let textChanged = textChanged {  textChanged(target) }
+        
     }
 }
 
@@ -310,5 +398,15 @@ extension WLBaseTextField {
     open override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         
         return super.leftViewRect(forBounds: bounds)
+    }
+}
+extension String {
+    //使用正则表达式替换
+    func pregReplace(pattern: String, with: String,
+                     options: NSRegularExpression.Options = []) -> String {
+        let regex = try! NSRegularExpression(pattern: pattern, options: options)
+        return regex.stringByReplacingMatches(in: self, options: [],
+                                              range: NSMakeRange(0, self.count),
+                                              withTemplate: with)
     }
 }

@@ -8,7 +8,8 @@
 
 import UIKit
 import WLToolsKit
-class WLLeftTitleTextField: WLBaseTextField {
+
+open class WLLeftTitleTextField: WLBaseTextField {
     
     open var leftTitleLabel: UILabel = UILabel()
     
@@ -40,6 +41,7 @@ class WLLeftTitleTextField: WLBaseTextField {
         }
     }
 }
+
 extension WLLeftTitleTextField {
     
     @objc open override func commitInit() {
