@@ -44,6 +44,8 @@ class ViewController: UIViewController {
         
         tf.backgroundColor = .red
         
+        tf.set_bottomLineColor(.green)
     
+        tf.set_bottomLineFrame(CGRect(x: 80, y: 43, width: 80, height: 1))
     }
 }

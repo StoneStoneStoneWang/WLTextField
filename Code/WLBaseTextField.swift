@@ -19,9 +19,9 @@ import WLToolsKit
 //非英文或数字：[^A-Za-z0-9]
 //非因为或数字或下划线：[^A-Za-z0-9_]
 
-fileprivate let WLTOPLINE_TAG: Int = 1001
+public let WLTOPLINE_TAG: Int = 1001
 
-fileprivate let WLBOTTOMLINE_TAG: Int = 1002
+public let WLBOTTOMLINE_TAG: Int = 1002
 
 fileprivate let WLDOTAFTERCOUNT: Int = 2
 
@@ -51,9 +51,21 @@ open class WLBaseTextField: UITextField {
         $0.tag = WLTOPLINE_TAG
     }
     
-    public var topLineFrame: CGRect = .zero
+    fileprivate var topLineFrame: CGRect = .zero {
+        
+        willSet {
+            
+            bottomLine.frame = newValue
+        }
+    }
     
-    fileprivate var topLineColor: UIColor = .clear
+    fileprivate var topLineColor: UIColor = .clear {
+        
+        willSet {
+            
+            bottomLine.backgroundColor = newValue
+        }
+    }
     
     // MARK: bottomLine
     fileprivate lazy var bottomLine: UIView = UIView().then {
@@ -61,9 +73,21 @@ open class WLBaseTextField: UITextField {
         $0.tag = WLBOTTOMLINE_TAG
     }
     
-    fileprivate var bottomLineFrame: CGRect = .zero
+    fileprivate var bottomLineFrame: CGRect = .zero  {
+        
+        willSet {
+            
+            bottomLine.frame = newValue
+        }
+    }
     
-    fileprivate var bottomLineColor: UIColor = .clear
+    fileprivate var bottomLineColor: UIColor = .clear  {
+        
+        willSet {
+            
+            bottomLine.backgroundColor = newValue
+        }
+    }
     
     // MARK: maxLength 默认Int.max
     fileprivate var maxLength: Int = Int.max
@@ -209,21 +233,21 @@ extension WLBaseTextField {
     }
     public func set_topLineFrame(_ frame: CGRect) {
         
-        topLine.frame = frame
+        topLineFrame = frame
     }
     
     public func set_bottomLineFrame(_ frame: CGRect) {
         
-        bottomLine.frame = frame
+        bottomLineFrame = frame
     }
     public func set_topLineColor(_ color: UIColor) {
         
-        topLine.backgroundColor = color
+        topLineColor = color
     }
     
     public func set_bottomLineColor(_ color: UIColor) {
         
-        topLine.backgroundColor = color
+        bottomLineColor = color
     }
 }
 // MARK: UITextFieldDelegate
