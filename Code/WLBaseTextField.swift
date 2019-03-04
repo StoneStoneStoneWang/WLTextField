@@ -116,7 +116,6 @@ open class WLBaseTextField: UITextField {
                 
                 keyboardType = .asciiCapable
             case .defineLength:
-                //            case .only_zh_cn:
                 
                 NotificationCenter
                     .default
@@ -134,6 +133,14 @@ open class WLBaseTextField: UITextField {
             case .default:
                 
                 keyboardType = .default
+                
+                maxLength = Int.max
+                
+            case .asii:
+                
+                pattern = WLNUMBERANDCHAR_PARTTERN
+                
+                keyboardType = .asciiCapable
                 
                 maxLength = Int.max
             }
@@ -190,6 +197,8 @@ extension WLBaseTextField {
         case vcode_Length4
         /** 6位验证码 */
         case vcode_length6
+        
+        case asii
         
         case only_zh_cn // 简体中文
         
