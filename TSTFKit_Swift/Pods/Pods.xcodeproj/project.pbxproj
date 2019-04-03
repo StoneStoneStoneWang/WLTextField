@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		007E41C09A14758BE44AF9290F449675 /* DateUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtil.swift; path = Code/DateUtil.swift; sourceTree = "<group>"; };
-		016B71349C75FC49C3EA13E4589E54C9 /* WLToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WLToolsKit.framework; path = WLToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		016B71349C75FC49C3EA13E4589E54C9 /* WLToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WLToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0538BF068DB505DAB82722ACED8DADAE /* Pods-TSTFKit_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSTFKit_Swift-umbrella.h"; sourceTree = "<group>"; };
 		204279F19CEB2A00A566E5D6199DA361 /* WLToolsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLToolsKit-dummy.m"; sourceTree = "<group>"; };
 		20D9C90EDA16EE652951DC76CF47B47A /* Pods-TSTFKit_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTFKit_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2F8F3B19AAA303E8C92A46D9552B817A /* WLJsonCast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WLJsonCast.swift; path = Code/WLJsonCast.swift; sourceTree = "<group>"; };
 		326431E36851E1A29D92814ABD21DA9F /* WLAppStoreUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WLAppStoreUtil.swift; path = Code/WLAppStoreUtil.swift; sourceTree = "<group>"; };
-		4B835AA0937F5DB82EEEEE060E538964 /* Pods_TSTFKit_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSTFKit_Swift.framework; path = "Pods-TSTFKit_Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B835AA0937F5DB82EEEEE060E538964 /* Pods_TSTFKit_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSTFKit_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDCB2FC89CC5B050A5E250F4987BC3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D966912F44A801ACD6F1A2B7E54AC7 /* WLToolsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLToolsKit.xcconfig; sourceTree = "<group>"; };
 		61ECA11014A0715F5B0D795411D3AE38 /* WLCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WLCommon.swift; path = Code/WLCommon.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		8B6B3F9FF2A8DDBF18257B068A38C0AE /* Pods-TSTFKit_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSTFKit_Swift.modulemap"; sourceTree = "<group>"; };
 		8D99181D3E94EC171A98985D912C15B5 /* UIColor+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Util.swift"; path = "Code/UIColor+Util.swift"; sourceTree = "<group>"; };
 		92EF2EC795649D3593211F3011B194F0 /* String+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Util.swift"; path = "Code/String+Util.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B2B81D303219E565EBEC8C4622AA152 /* Pods-TSTFKit_Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSTFKit_Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9E1B0F709BE1807415B5EF3B14F7ED32 /* Pods-TSTFKit_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTFKit_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		A06879FDC15BA9110FD19FF73622BC95 /* UIImage+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Util.swift"; path = "Code/UIImage+Util.swift"; sourceTree = "<group>"; };
@@ -191,7 +191,6 @@
 				2CE04E01FE1CCD3D22A72391ABA2E7B9 /* WLOpenUrl.swift */,
 				9E47CC61F78394B556264B6EE3A36C1C /* Support Files */,
 			);
-			name = WLToolsKit;
 			path = WLToolsKit;
 			sourceTree = "<group>";
 		};
@@ -261,14 +260,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					CB9890D60746011D1AE6946859CCDD0C = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 12F0D82E014523BABD2780052738FC1B /* Products */;
@@ -341,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -392,8 +398,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -416,18 +421,14 @@
 				INFOPLIST_FILE = "Target Support Files/WLToolsKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WLToolsKit/WLToolsKit.modulemap";
 				PRODUCT_MODULE_NAME = WLToolsKit;
 				PRODUCT_NAME = WLToolsKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -439,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -518,11 +520,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TSTFKit_Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSTFKit_Swift/Pods-TSTFKit_Swift.modulemap";
 				OTHER_LDFLAGS = "";
@@ -556,18 +554,14 @@
 				INFOPLIST_FILE = "Target Support Files/WLToolsKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WLToolsKit/WLToolsKit.modulemap";
 				PRODUCT_MODULE_NAME = WLToolsKit;
 				PRODUCT_NAME = WLToolsKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -591,11 +585,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TSTFKit_Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSTFKit_Swift/Pods-TSTFKit_Swift.modulemap";
 				OTHER_LDFLAGS = "";

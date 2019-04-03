@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLTextField"
-s.version      = "1.0.9"
+s.version      = "1.1.0"
 s.summary      = "A Lib For TF."
 s.description  = <<-DESC
 TSTFKit_Swift 文本框的工具类 基于 MXThenAction UIColor
@@ -13,7 +13,7 @@ s.author             = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
 s.platform     = :ios, "9.0"
 s.ios.deployment_target = "9.0"
 
-s.swift_version = '4.2'
+s.swift_version = '5'
 
 s.frameworks = 'UIKit', 'Foundation'
 
